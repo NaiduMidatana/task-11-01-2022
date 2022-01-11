@@ -38,9 +38,9 @@ public class ProductsArrayMain {
 			if(productArray[i].getProductId() == pid) {
 				System.out.println("product found");
 			}
-			//else {
-			//	throw new ProductNotFoundException ("Product does not exist with id = " + pid);
-			//}
+			else {
+				throw new ProductNotFoundException ("Product does not exist with id = " + pid);
+			}
 		}
 	}finally {
 		sc.close();
